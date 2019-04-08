@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sridharkritha/deployment/issues"
   },
-  "homepage": "https://github.com/sridharkritha/deployment#readme"
+  "homepage": "https://github.com/sridharkritha/deployment#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }

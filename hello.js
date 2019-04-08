@@ -24,7 +24,7 @@ http.createServer(function(req, res)
 			json: true
 		}, function(error, response, body){
 		// print the pulled body content
-		console.log(body);
+		//console.log(body);
 		// console.log(response);
 	});
 
