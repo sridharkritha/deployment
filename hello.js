@@ -14,6 +14,7 @@ var http = require("http");
 var request = require("request"); // npm install request --save
 
 var reqCounter  = 0;
+var bb = null;
 // Create a quick web server in nodejs
 http.createServer(function(req, res)
 {
@@ -26,8 +27,9 @@ http.createServer(function(req, res)
 		// print the pulled body content
 		//console.log(body);
 		// console.log(response);
-		response.write(body); //write a response to the client
+		//response.write(body); //write a response to the client
 		//res.end(); //end the response
+		response.end(body);
 	});
 
 	// server log
@@ -36,7 +38,7 @@ http.createServer(function(req, res)
 	// Run the webserver => node createWebserver.js
 	// Request the webserver from browser => localhost:99
 	// Prints the welcome msg in the browser
-	res.end('Hello ... new visitor...sridhar');
+	//res.end('Hello ... new visitor...sridhar');
 }).listen(process.env.PORT ||80);
 
 /*
