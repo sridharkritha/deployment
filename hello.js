@@ -30,7 +30,7 @@ http.createServer(function(req, res)
 		//response.write(body); //write a response to the client
 		//res.end(); //end the response
 		//response.end(body);
-		res.end('Hello ... new visitor...sridhar');
+		res.end('body;');
 	});
 
 	// server log
