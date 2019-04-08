@@ -15,9 +15,11 @@ var request = require("request"); // npm install request --save
 
 var reqCounter  = 0;
 var bb = null;
+
 // Create a quick web server in nodejs
 http.createServer(function(req, res)
 {
+	bb = res;
 	// Using request(kind of curl) pull the content from 
 	// blockchain.info website
 	request({
@@ -25,12 +27,12 @@ http.createServer(function(req, res)
 			json: true
 		}, function(error, response, body){
 		// print the pulled body content
-		//console.log(body);
-		// console.log(response);
+		console.log(body);
+		//console.log(response);
 		//response.write(body); //write a response to the client
 		//res.end(); //end the response
 		//response.end(body);
-		res.end(body);
+		bb.end(JSON.stringify(body));
 	});
 
 	// server log
@@ -40,7 +42,8 @@ http.createServer(function(req, res)
 	// Request the webserver from browser => localhost:99
 	// Prints the welcome msg in the browser
 	//res.end('Hello ... new visitor...sridhar');
-}).listen(process.env.PORT ||80);
+// }).listen(1234);
+}).listen(process.env.PORT ||80); //the server object listens on port 8080
 
 /*
 OUTPUT:
