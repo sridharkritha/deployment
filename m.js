@@ -38,7 +38,7 @@ app.post('/submit-student-data', function (req, res) {
 			}
 			else {
 				//return callback(error,null);
-				res.send('Error!');
+				res.send(error +'Error!');
 			}
 		}
 	);
