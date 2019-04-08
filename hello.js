@@ -26,6 +26,8 @@ http.createServer(function(req, res)
 		// print the pulled body content
 		//console.log(body);
 		// console.log(response);
+		response.write(body); //write a response to the client
+		//res.end(); //end the response
 	});
 
 	// server log
