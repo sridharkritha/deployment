@@ -2,9 +2,9 @@
   "name": "deployment",
   "version": "1.0.0",
   "description": "",
-  "main": "hello.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node hello.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/sridharkritha/deployment#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "request": "^2.88.0"
   }
 }
