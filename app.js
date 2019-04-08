@@ -30,7 +30,7 @@ app.delete('/delete-data', function (req, res) {
     res.send('DELETE Request');
 });
 */
-
-var server = app.listen(1239, function () {
+var port = process.env.PORT || 1239;
+var server = app.listen(port, function () {
     console.log('Node server is running..');
 });
