@@ -29,11 +29,12 @@ http.createServer(function(req, res)
 		// console.log(response);
 		//response.write(body); //write a response to the client
 		//res.end(); //end the response
-		response.end(body);
+		//response.end(body);
+		res.end('Hello ... new visitor...sridhar');
 	});
 
 	// server log
-	console.log(++reqCounter + ' Request from => ' + req.url);
+	//console.log(++reqCounter + ' Request from => ' + req.url);
 	
 	// Run the webserver => node createWebserver.js
 	// Request the webserver from browser => localhost:99
