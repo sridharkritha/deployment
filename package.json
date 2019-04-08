@@ -2,9 +2,9 @@
   "name": "deployment",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "m.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node m.js"
   },
   "repository": {
     "type": "git",
