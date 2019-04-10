@@ -50,6 +50,15 @@ http.createServer(function(req, res)
 	7. git push heroku master (push the project to heroku for deployment)
 	8. heroku open
 
+	Advanced:
+	---------
+	6. heroku create --region eu
+	7. heroku git:remote -a stormy-waters-62271 (push the project to heroku for deployment )
+
+	Clone:
+	heroku git:clone -a stormy-waters-62271
+
+
 	// ref: https://medium.com/@grantspilsbury/build-and-deploy-a-node-express-server-to-heroku-in-10-steps-70c936ab15dc
 
 	*/
